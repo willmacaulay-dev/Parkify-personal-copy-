@@ -1,19 +1,18 @@
-/* Reset */
+
 * { box-sizing: border-box; }
 
 html, body {
-  width: 100% !important;
-  height: auto !important;     /* stop forced 100vh layouts */
-  min-height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-family: sans-serif;
-  overflow-x: hidden !important;
-  overflow-y: auto !important; /* ensure top is reachable */
-  display: block !important;   /* defeat body flex centering */
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: sans-serif;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    display: block !important;
 }
 
-/* Neutralize Vite template root styling that often causes clipping */
 #root {
   width: 100% !important;
   height: auto !important;
@@ -21,11 +20,10 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   max-width: none !important;
-  overflow: visible !important; /* defeat overflow hidden */
+  overflow: visible !important;
   display: block !important;
 }
 
-/* Your wrappers */
 .page {
   width: 100%;
   min-height: 100vh;
@@ -38,7 +36,6 @@ html, body {
   padding: 12px;
 }
 
-/* Leaflet safety */
 .leaflet-container {
   width: 100% !important;
   max-width: 100% !important;
